@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    background-color: #EEF2F6;
+    color: #0F172A;
+    overflow-x: hidden;
+  }
+
+  /* Shiprocket Purple Subtle Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F4F4F6;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C4BDED;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #735AE5;
+  }
+}
+
+/* Shiprocket Brand Gradients and Utilities */
+.shiprocket-purple-gradient {
+  background: linear-gradient(135deg, #735AE5 0%, #5F45D1 100%);
+}
+
+.shiprocket-hero-bg {
+  background: linear-gradient(180deg, #F4F0FD 0%, #FAF8FE 60%, #FFFFFF 100%);
+}
+
+.shiprocket-navy-bg {
+  background: linear-gradient(135deg, #09074F 0%, #150F69 50%, #0B0757 100%);
+}
+
+.glow-purple {
+  box-shadow: 0 10px 30px -5px rgba(115, 90, 229, 0.25);
+}
+
+.glow-card {
+  box-shadow: 0 4px 20px -2px rgba(20, 20, 19, 0.06);
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(rgba(115, 90, 229, 0.12) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+/* Hero Slider Staggered Smooth Text Transitions */
+@keyframes heroTextIn {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px);
+  }
+}
+
+.animate-hero-badge {
+  animation: heroTextIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-hero-headline {
+  animation: heroTextIn 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.06s forwards;
+  opacity: 0;
+}
+
+.animate-hero-subtitle {
+  animation: heroTextIn 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.14s forwards;
+  opacity: 0;
+}
+
+.animate-hero-cta {
+  animation: heroTextIn 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.22s forwards;
+  opacity: 0;
+}
+
+.animate-hero-card {
+  animation: heroTextIn 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+  opacity: 0;
+}
+

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">UpliftMarketing logo</title>
+  <desc id="desc">Blue to violet U-shaped mark with upward arrow, followed by UpliftMarketing wordmark in white for dark backgrounds.</desc>
+  <defs>
+    <linearGradient id="upliftGradientWhite" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00C6FF"/>
+      <stop offset="0.48" stop-color="#1769FF"/>
+      <stop offset="1" stop-color="#7B2FF7"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(34 28)">
+    <path d="M28 34 H78 V132 C78 161 94 181 120 181 C147 181 164 160 164 132 V77 H214 V132 C214 190 176 231 120 231 C64 231 28 191 28 132 Z" fill="url(#upliftGradientWhite)"/>
+    <path d="M164 77 L164 34 L190 34 L190 0 L244 58 L190 116 L190 77 Z" fill="url(#upliftGradientWhite)"/>
+  </g>
+  <text x="310" y="181" font-family="Inter, Montserrat, Arial, sans-serif" font-size="105" letter-spacing="-4" fill="#FFFFFF"><tspan font-weight="750">Uplift</tspan><tspan font-weight="400">Marketing</tspan></text>
+</svg>
