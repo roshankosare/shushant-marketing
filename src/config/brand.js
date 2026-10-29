@@ -6,6 +6,12 @@ export const BRAND = {
   description:
     'We help businesses reach the right audience, generate quality leads, and build a stronger digital presence through strategic advertising and creative marketing.',
   subline: 'Strategy-led marketing. Creative execution. Continuous improvement.',
+  contact: {
+    phone: '+91 93730 80584',
+    phoneDisplay: '9373080584',
+    phoneRaw: '+919373080584',
+    email: 'upliftmarketing.in@gmail.com',
+  },
   aboutIntro:
     'Uplift Marketing Agency helps businesses build a stronger digital presence through strategic advertising, creative content, and thoughtful execution. We bring marketing strategy and creative work together to help brands connect with their audiences and work toward meaningful business growth.',
   navLinks: [
