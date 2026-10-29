@@ -1,7 +1,6 @@
 import React from 'react';
 import { ArrowUpRight, ArrowDown, Target, Sparkles, TrendingUp, CheckCircle2 } from 'lucide-react';
 import { BRAND } from '../config/brand';
-import heroVisual from '../assets/hero-campaign.jpg';
 
 export default function Hero() {
   const scrollTo = (id) => {
@@ -16,7 +15,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative pt-12 pb-16 sm:pt-20 sm:pb-24 lg:pt-24 lg:pb-32 bg-white border-b border-slate-200 overflow-hidden">
       {/* Subtle background ambient light */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-purple-50 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -25,8 +24,8 @@ export default function Hero() {
           <div className="lg:col-span-7 space-y-6 sm:space-y-8">
             
             {/* Eyebrow */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple-50 border border-purple-100 text-xs font-semibold text-purple-700 uppercase tracking-wider">
-              <span className="w-1.5 h-1.5 rounded-full bg-purple-600 animate-pulse" />
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-semibold text-emerald-800 uppercase tracking-wider">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#009933] animate-pulse" />
               <span>{BRAND.eyebrow}</span>
             </div>
 
@@ -44,7 +43,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
               <button
                 onClick={() => scrollTo('consultation')}
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-semibold text-sm transition-all duration-150 shadow-sm hover:shadow-purple-500/25 active:scale-[0.99] cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-[#009933] hover:bg-[#007A29] text-white font-semibold text-sm transition-all duration-150 shadow-sm hover:shadow-emerald-600/25 active:scale-[0.99] cursor-pointer"
               >
                 <span>Book a Free Consultation</span>
                 <ArrowUpRight className="w-4 h-4" />
@@ -75,10 +74,10 @@ export default function Hero() {
               {/* Card Header */}
               <div className="flex items-center justify-between pb-5 border-b border-slate-200/80">
                 <div className="flex items-center gap-2.5">
-                  <div className="w-2.5 h-2.5 rounded-full bg-purple-600" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-[#009933]" />
                   <span className="text-xs font-bold text-slate-800 uppercase tracking-wider">Growth Framework</span>
                 </div>
-                <span className="text-[11px] font-mono text-purple-700 bg-purple-100/60 px-2 py-0.5 rounded">
+                <span className="text-[11px] font-mono text-emerald-800 bg-emerald-100/70 border border-emerald-200/60 px-2 py-0.5 rounded font-medium">
                   Strategy-Led
                 </span>
               </div>
@@ -87,7 +86,7 @@ export default function Hero() {
               <div className="space-y-3.5 pt-5">
                 
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200 flex items-start gap-3.5 shadow-2xs">
-                  <div className="w-8 h-8 rounded-lg bg-purple-50 border border-purple-100 flex items-center justify-center text-purple-600 shrink-0 mt-0.5">
+                  <div className="w-8 h-8 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-[#009933] shrink-0 mt-0.5">
                     <Target className="w-4 h-4" />
                   </div>
                   <div>
@@ -97,7 +96,7 @@ export default function Hero() {
                 </div>
 
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200 flex items-start gap-3.5 shadow-2xs">
-                  <div className="w-8 h-8 rounded-lg bg-purple-50 border border-purple-100 flex items-center justify-center text-purple-600 shrink-0 mt-0.5">
+                  <div className="w-8 h-8 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-[#009933] shrink-0 mt-0.5">
                     <Sparkles className="w-4 h-4" />
                   </div>
                   <div>
@@ -107,7 +106,7 @@ export default function Hero() {
                 </div>
 
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200 flex items-start gap-3.5 shadow-2xs">
-                  <div className="w-8 h-8 rounded-lg bg-purple-50 border border-purple-100 flex items-center justify-center text-purple-600 shrink-0 mt-0.5">
+                  <div className="w-8 h-8 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-[#009933] shrink-0 mt-0.5">
                     <TrendingUp className="w-4 h-4" />
                   </div>
                   <div>
@@ -121,8 +120,8 @@ export default function Hero() {
               {/* Card Footer Note */}
               <div className="mt-5 pt-4 border-t border-slate-200/80 flex items-center justify-between text-xs text-slate-500">
                 <span>Built for ambitious businesses</span>
-                <span className="font-medium text-purple-700 flex items-center gap-1">
-                  <CheckCircle2 className="w-3.5 h-3.5" /> Direct execution
+                <span className="font-medium text-emerald-700 flex items-center gap-1">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#009933]" /> Direct execution
                 </span>
               </div>
 

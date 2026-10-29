@@ -20,7 +20,7 @@ export default function WhoWeHelp() {
         
         {/* Section Header */}
         <div className="max-w-3xl mb-14 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 border border-purple-100 text-xs font-semibold text-purple-700 uppercase tracking-wider mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-semibold text-emerald-800 uppercase tracking-wider mb-3">
             <span>Client Profiles</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -39,9 +39,9 @@ export default function WhoWeHelp() {
             return (
               <div
                 key={client.title}
-                className="bg-slate-50 border border-slate-200 rounded-xl p-6 transition-all duration-200 hover:border-purple-300 hover:bg-white hover:shadow-sm"
+                className="bg-slate-50 border border-slate-200 rounded-xl p-6 transition-all duration-200 hover:border-emerald-400 hover:bg-white hover:shadow-sm"
               >
-                <div className="w-10 h-10 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-purple-600 mb-4 shadow-2xs">
+                <div className="w-10 h-10 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-[#009933] mb-4 shadow-2xs">
                   <Icon className="w-5 h-5" />
                 </div>
 
@@ -63,9 +63,9 @@ export default function WhoWeHelp() {
           })}
 
           {/* Consultation Prompt Card */}
-          <div className="bg-purple-50/70 border border-purple-200 rounded-xl p-6 flex flex-col justify-between">
+          <div className="bg-emerald-50/70 border border-emerald-200 rounded-xl p-6 flex flex-col justify-between">
             <div>
-              <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-purple-100/80 text-[11px] font-bold text-purple-800 uppercase tracking-wider mb-3">
+              <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-emerald-100/90 text-[11px] font-bold text-emerald-800 uppercase tracking-wider mb-3">
                 Tailored Engagement
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-2">
@@ -78,7 +78,7 @@ export default function WhoWeHelp() {
 
             <button
               onClick={scrollToConsultation}
-              className="mt-6 inline-flex items-center gap-2 text-xs font-bold text-purple-700 hover:text-purple-900 cursor-pointer"
+              className="mt-6 inline-flex items-center gap-2 text-xs font-bold text-[#009933] hover:text-[#007A29] cursor-pointer"
             >
               <span>Discuss Your Goals</span>
               <ArrowRight className="w-3.5 h-3.5" />

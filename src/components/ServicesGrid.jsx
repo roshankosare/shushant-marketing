@@ -42,7 +42,7 @@ export default function ServicesGrid() {
         
         {/* Section Header */}
         <div className="max-w-3xl mb-14 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 border border-purple-100 text-xs font-semibold text-purple-700 uppercase tracking-wider mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-semibold text-emerald-800 uppercase tracking-wider mb-3">
             <span>Capabilities & Services</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -61,21 +61,21 @@ export default function ServicesGrid() {
             return (
               <div
                 key={service.id}
-                className="group relative bg-white border border-slate-200 rounded-xl p-6 transition-all duration-200 hover:border-purple-300 hover:shadow-md hover:-translate-y-1 flex flex-col justify-between"
+                className="group relative bg-white border border-slate-200 rounded-xl p-6 transition-all duration-200 hover:border-emerald-400 hover:shadow-md hover:-translate-y-1 flex flex-col justify-between"
               >
                 <div>
                   {/* Service Number & Subtle Icon */}
                   <div className="flex items-center justify-between mb-5">
-                    <span className="text-xs font-mono font-semibold text-slate-400 group-hover:text-purple-600 transition-colors">
+                    <span className="text-xs font-mono font-semibold text-slate-400 group-hover:text-[#009933] transition-colors">
                       {service.id}
                     </span>
-                    <div className="w-8 h-8 rounded-lg bg-slate-50 border border-slate-100 group-hover:bg-purple-50 group-hover:border-purple-100 flex items-center justify-center text-slate-500 group-hover:text-purple-600 transition-colors">
+                    <div className="w-8 h-8 rounded-lg bg-slate-50 border border-slate-100 group-hover:bg-emerald-50 group-hover:border-emerald-200 flex items-center justify-center text-slate-500 group-hover:text-[#009933] transition-colors">
                       <IconComponent className="w-4 h-4" />
                     </div>
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-lg font-bold text-slate-900 group-hover:text-purple-900 transition-colors mb-2.5">
+                  <h3 className="text-lg font-bold text-slate-900 group-hover:text-emerald-950 transition-colors mb-2.5">
                     {service.title}
                   </h3>
 
@@ -89,7 +89,7 @@ export default function ServicesGrid() {
                 <div className="pt-6 mt-4 border-t border-slate-100">
                   <button
                     onClick={() => scrollToConsultation(service.title)}
-                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-purple-600 hover:text-purple-800 transition-colors cursor-pointer"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#009933] hover:text-[#007A29] transition-colors cursor-pointer"
                   >
                     <span>Enquire for {service.title}</span>
                     <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

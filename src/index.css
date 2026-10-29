@@ -13,42 +13,38 @@
   }
 
   body {
-    background-color: #EEF2F6;
+    background-color: #F8FAF9;
     color: #0F172A;
     overflow-x: hidden;
   }
 
-  /* Shiprocket Purple Subtle Scrollbar */
+  /* Uplift Green Subtle Scrollbar */
   ::-webkit-scrollbar {
     width: 6px;
   }
   ::-webkit-scrollbar-track {
-    background: #F4F4F6;
+    background: #F1F5F2;
   }
   ::-webkit-scrollbar-thumb {
-    background: #C4BDED;
+    background: #86EFAC;
     border-radius: 4px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #735AE5;
+    background: #009933;
   }
 }
 
-/* Shiprocket Brand Gradients and Utilities */
-.shiprocket-purple-gradient {
-  background: linear-gradient(135deg, #735AE5 0%, #5F45D1 100%);
+/* Uplift Brand Gradients and Utilities matching CorelDRAW Logo */
+.brand-green-gradient {
+  background: linear-gradient(135deg, #009933 0%, #007A29 100%);
 }
 
-.shiprocket-hero-bg {
-  background: linear-gradient(180deg, #F4F0FD 0%, #FAF8FE 60%, #FFFFFF 100%);
+.brand-hero-bg {
+  background: linear-gradient(180deg, #F0FDF4 0%, #F8FAF9 60%, #FFFFFF 100%);
 }
 
-.shiprocket-navy-bg {
-  background: linear-gradient(135deg, #09074F 0%, #150F69 50%, #0B0757 100%);
-}
-
-.glow-purple {
-  box-shadow: 0 10px 30px -5px rgba(115, 90, 229, 0.25);
+.glow-green {
+  box-shadow: 0 10px 30px -5px rgba(0, 153, 51, 0.25);
 }
 
 .glow-card {
@@ -56,7 +52,7 @@
 }
 
 .bg-dot-pattern {
-  background-image: radial-gradient(rgba(115, 90, 229, 0.12) 1.5px, transparent 1.5px);
+  background-image: radial-gradient(rgba(0, 153, 51, 0.12) 1.5px, transparent 1.5px);
   background-size: 24px 24px;
 }
 
@@ -97,4 +93,3 @@
   animation: heroTextIn 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
   opacity: 0;
 }
-

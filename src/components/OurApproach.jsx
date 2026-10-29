@@ -11,7 +11,7 @@ export default function OurApproach() {
         
         {/* Section Header */}
         <div className="max-w-3xl mb-14 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 border border-purple-100 text-xs font-semibold text-purple-700 uppercase tracking-wider mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-semibold text-emerald-800 uppercase tracking-wider mb-3">
             <span>Process & Methodology</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -30,11 +30,11 @@ export default function OurApproach() {
             return (
               <div
                 key={step.step}
-                className="bg-white border border-slate-200 rounded-xl p-6 relative transition-all duration-200 hover:border-purple-300 hover:shadow-sm"
+                className="bg-white border border-slate-200 rounded-xl p-6 relative transition-all duration-200 hover:border-emerald-400 hover:shadow-sm"
               >
                 {/* Step Indicator */}
                 <div className="flex items-center justify-between mb-5">
-                  <span className="text-2xl font-extrabold text-purple-600 font-mono">
+                  <span className="text-2xl font-extrabold text-[#009933] font-mono">
                     {step.step}
                   </span>
                   <div className="w-8 h-8 rounded-lg bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-500">
@@ -66,7 +66,7 @@ export default function OurApproach() {
           <p>
             <strong className="text-slate-800">Adaptable by design:</strong> We tailor the pace, creative deliverables, and ad platforms specifically to your sales cycle and budget capacity.
           </p>
-          <span className="shrink-0 font-medium text-purple-700 bg-purple-50 px-3 py-1 rounded-full border border-purple-100">
+          <span className="shrink-0 font-medium text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
             No rigid one-size-fits-all packages
           </span>
         </div>

@@ -27,7 +27,7 @@ export default function Footer() {
               <img
                 src={logoWhite}
                 alt={BRAND.name}
-                className="h-7 w-auto object-contain"
+                className="h-7 sm:h-8 w-auto object-contain"
               />
             </div>
             <p className="text-sm font-medium text-slate-300">
@@ -42,37 +42,37 @@ export default function Footer() {
           <nav className="flex flex-wrap items-center gap-6 text-sm" aria-label="Footer Navigation">
             <button
               onClick={() => scrollTo('services')}
-              className="hover:text-purple-400 transition-colors cursor-pointer"
+              className="hover:text-emerald-400 transition-colors cursor-pointer"
             >
               Services
             </button>
             <button
               onClick={() => scrollTo('work')}
-              className="hover:text-purple-400 transition-colors cursor-pointer"
+              className="hover:text-emerald-400 transition-colors cursor-pointer"
             >
               Our Work
             </button>
             <button
               onClick={() => scrollTo('who-we-help')}
-              className="hover:text-purple-400 transition-colors cursor-pointer"
+              className="hover:text-emerald-400 transition-colors cursor-pointer"
             >
               Who We Help
             </button>
             <button
               onClick={() => scrollTo('approach')}
-              className="hover:text-purple-400 transition-colors cursor-pointer"
+              className="hover:text-emerald-400 transition-colors cursor-pointer"
             >
               Our Approach
             </button>
             <button
               onClick={() => scrollTo('about')}
-              className="hover:text-purple-400 transition-colors cursor-pointer"
+              className="hover:text-emerald-400 transition-colors cursor-pointer"
             >
               About
             </button>
             <button
               onClick={() => scrollTo('consultation')}
-              className="hover:text-purple-400 transition-colors cursor-pointer"
+              className="hover:text-emerald-400 transition-colors cursor-pointer"
             >
               Contact
             </button>

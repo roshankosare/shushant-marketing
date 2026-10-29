@@ -1,13 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title">
-  <title id="title">UpliftMarketing favicon</title>
-  <defs>
-    <linearGradient id="upliftGradient" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#00C6FF"/>
-      <stop offset="0.48" stop-color="#1769FF"/>
-      <stop offset="1" stop-color="#7B2FF7"/>
-    </linearGradient>
-  </defs>
-  <rect x="8" y="8" width="240" height="240" rx="54" fill="#FFFFFF"/>
-  <path d="M48 55 H91 V127 C91 152 105 169 128 169 C151 169 165 152 165 127 V91 H207 V127 C207 177 175 210 128 210 C81 210 48 177 48 127 Z" fill="url(#upliftGradient)"/>
-  <path d="M165 91 V55 H187 V29 L226 71 L187 113 V91 Z" fill="url(#upliftGradient)"/>
+  <title id="title">Uplift Marketing Agency Favicon</title>
+  <rect x="0" y="0" width="256" height="256" rx="54" fill="#0F172A"/>
+  <!-- Bold U letter in crisp white -->
+  <path d="M68 64 H102 V132 C102 147 112 157 128 157 C144 157 154 147 154 132 V64 H188 V132 C188 168 163 191 128 191 C93 191 68 168 68 132 Z" fill="#FFFFFF"/>
+  <!-- Signature Brand Green Swoosh from logo -->
+  <path d="M44 186 C82 222 174 222 212 186 C180 205 108 205 44 186 Z" fill="#00C853"/>
 </svg>

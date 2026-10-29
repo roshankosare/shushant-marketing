@@ -58,31 +58,31 @@ export default function PortfolioGallery() {
       image: heroImg,
       type: 'Web Layout Sample',
       desc: 'Fast-loading, mobile-first page layout structured with a frictionless enquiry flow, benefit-driven copy blocks, and accessible consultation booking.',
-      deliverables: ['Responsive Web Layout', 'Mobile Optimization', 'Lead Capture Architecture'],
+      deliverables: ['Responsive Web Wireframe', 'Trust Badge Placement', 'Frictionless Enquiry Form'],
     },
     {
       id: 6,
-      title: 'Short-Form Video & Reels Hook Framework',
+      title: 'Short-Form Reel & Dynamic Social Visuals',
       category: 'social',
-      categoryLabel: 'Reels & Video',
+      categoryLabel: 'Social Media',
       image: socialImg,
-      type: 'Video Format Concept',
-      desc: 'Engaging first-3-seconds hook structure combined with readable kinetic captions and brand-aligned video pacing.',
-      deliverables: ['Video Hook Scripting', 'Kinetic Caption Styling', 'Platform Sizing & Cuts'],
+      type: 'Sample Creative Concept',
+      desc: 'Pacing, on-screen text hierarchy, and sound-sync creative structure formulated to hold viewer retention and drive comments or clicks.',
+      deliverables: ['Reels / Shorts Concept', 'Hook Text Variations', 'Audio Trend Alignment'],
     },
   ];
 
   const filterTabs = [
-    { id: 'all', label: 'All Creative' },
-    { id: 'ads', label: 'Advertising Creatives' },
-    { id: 'social', label: 'Social Media & Video' },
+    { id: 'all', label: 'All Work' },
+    { id: 'ads', label: 'Ad Creatives' },
+    { id: 'social', label: 'Social Media' },
     { id: 'brand', label: 'Brand & Design' },
-    { id: 'web', label: 'Web & Landing Pages' },
+    { id: 'web', label: 'Landing Pages' },
   ];
 
   const filteredItems = activeFilter === 'all'
     ? portfolioItems
-    : portfolioItems.filter(item => item.category === activeFilter);
+    : portfolioItems.filter((item) => item.category === activeFilter);
 
   const scrollToConsultation = () => {
     setSelectedItem(null);
@@ -100,7 +100,7 @@ export default function PortfolioGallery() {
         
         {/* Section Header */}
         <div className="max-w-3xl mb-12 sm:mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 border border-purple-100 text-xs font-semibold text-purple-700 uppercase tracking-wider mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-semibold text-emerald-800 uppercase tracking-wider mb-3">
             <span>Portfolio & Creative Work</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -119,7 +119,7 @@ export default function PortfolioGallery() {
               onClick={() => setActiveFilter(tab.id)}
               className={`px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
                 activeFilter === tab.id
-                  ? 'bg-purple-600 text-white shadow-sm'
+                  ? 'bg-[#009933] text-white shadow-sm'
                   : 'bg-slate-50 text-slate-600 hover:bg-slate-100 border border-slate-200'
               }`}
             >
@@ -134,26 +134,23 @@ export default function PortfolioGallery() {
             <div
               key={item.id}
               onClick={() => setSelectedItem(item)}
-              className="group bg-slate-50 border border-slate-200 rounded-xl overflow-hidden cursor-pointer transition-all duration-200 hover:border-purple-300 hover:shadow-md hover:-translate-y-1 flex flex-col justify-between"
+              className="group bg-slate-50 border border-slate-200 rounded-xl overflow-hidden cursor-pointer transition-all duration-200 hover:border-emerald-400 hover:shadow-md hover:-translate-y-1 flex flex-col justify-between"
             >
               {/* Thumbnail Container */}
               <div className="relative aspect-[16/10] bg-slate-200 overflow-hidden">
                 <img
                   src={item.image}
                   alt={item.title}
-                  loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
                 />
-                
-                <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-white/90 text-slate-900 text-xs font-semibold backdrop-blur-xs shadow-sm">
-                    <Eye className="w-3.5 h-3.5" />
-                    <span>View Concept</span>
+                <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/30 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100 duration-200">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white text-slate-900 text-xs font-semibold shadow-lg">
+                    <Eye className="w-3.5 h-3.5" /> View Project
                   </span>
                 </div>
-
-                <div className="absolute top-3 left-3">
-                  <span className="text-[11px] font-semibold text-slate-800 bg-white/95 backdrop-blur-xs px-2.5 py-1 rounded border border-slate-200 shadow-2xs">
+                <div className="absolute bottom-2.5 left-2.5">
+                  <span className="text-[11px] font-semibold text-slate-900 bg-white/95 px-2.5 py-1 rounded shadow-2xs">
                     {item.categoryLabel}
                   </span>
                 </div>
@@ -165,7 +162,7 @@ export default function PortfolioGallery() {
                   <span className="text-[11px] font-mono uppercase tracking-wider text-slate-400 block mb-1">
                     {item.type}
                   </span>
-                  <h3 className="text-base font-bold text-slate-900 group-hover:text-purple-700 transition-colors">
+                  <h3 className="text-base font-bold text-slate-900 group-hover:text-emerald-950 transition-colors">
                     {item.title}
                   </h3>
                   <p className="mt-2 text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
@@ -173,7 +170,7 @@ export default function PortfolioGallery() {
                   </p>
                 </div>
 
-                <div className="mt-4 pt-3 border-t border-slate-200/80 flex items-center justify-between text-xs font-semibold text-purple-600">
+                <div className="mt-4 pt-3 border-t border-slate-200/80 flex items-center justify-between text-xs font-semibold text-[#009933]">
                   <span>Explore Thinking</span>
                   <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </div>
@@ -225,7 +222,7 @@ export default function PortfolioGallery() {
             {/* Modal Info */}
             <div className="p-6 sm:p-8 space-y-4">
               <div>
-                <span className="text-xs font-mono uppercase tracking-wider text-purple-600 font-semibold block mb-1">
+                <span className="text-xs font-mono uppercase tracking-wider text-[#009933] font-semibold block mb-1">
                   {selectedItem.type}
                 </span>
                 <h3 className="text-xl sm:text-2xl font-bold text-slate-900">
@@ -244,7 +241,7 @@ export default function PortfolioGallery() {
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600">
                   {selectedItem.deliverables.map((item, idx) => (
                     <li key={idx} className="flex items-center gap-2 p-2 rounded-lg bg-slate-50 border border-slate-200">
-                      <span className="w-1.5 h-1.5 rounded-full bg-purple-600" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#009933]" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -257,7 +254,7 @@ export default function PortfolioGallery() {
                 </span>
                 <button
                   onClick={scrollToConsultation}
-                  className="w-full sm:w-auto px-5 py-2.5 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-semibold text-xs transition-colors flex items-center justify-center gap-2"
+                  className="w-full sm:w-auto px-5 py-2.5 rounded-lg bg-[#009933] hover:bg-[#007A29] text-white font-semibold text-xs transition-colors flex items-center justify-center gap-2"
                 >
                   <span>Request Free Consultation</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />

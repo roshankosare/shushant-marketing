@@ -175,7 +175,7 @@ export default function ConsultationForm() {
           
           {/* Left Column: Context & What to Expect */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 border border-purple-100 text-xs font-semibold text-purple-700 uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-semibold text-emerald-800 uppercase tracking-wider">
               <span>Primary Consultation</span>
             </div>
 
@@ -195,15 +195,15 @@ export default function ConsultationForm() {
               
               <ul className="space-y-3 text-xs sm:text-sm text-slate-600">
                 <li className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-purple-600 mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#009933] mt-2 shrink-0" />
                   <span>Review of your target audience and current marketing channels.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-purple-600 mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#009933] mt-2 shrink-0" />
                   <span>Honest discussion on suitable ad platforms (Meta, Google, or organic content).</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-purple-600 mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#009933] mt-2 shrink-0" />
                   <span>No high-pressure sales tactics—just practical strategy and transparent pricing.</span>
                 </li>
               </ul>
@@ -268,7 +268,7 @@ export default function ConsultationForm() {
                           onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                           placeholder="e.g. John Doe"
                           className={`w-full px-3.5 py-2.5 text-sm rounded-lg bg-white border ${
-                            errors.fullName ? 'border-rose-400 focus:ring-rose-200' : 'border-slate-200 focus:border-purple-500 focus:ring-purple-100'
+                            errors.fullName ? 'border-rose-400 focus:ring-rose-200' : 'border-slate-200 focus:border-emerald-500 focus:ring-emerald-100'
                           } focus:outline-none focus:ring-3 transition-colors text-slate-900`}
                           aria-invalid={errors.fullName ? 'true' : 'false'}
                         />
@@ -290,7 +290,7 @@ export default function ConsultationForm() {
                         onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
                         placeholder="e.g. Acme Retail or Studio"
                         className={`w-full px-3.5 py-2.5 text-sm rounded-lg bg-white border ${
-                          errors.businessName ? 'border-rose-400 focus:ring-rose-200' : 'border-slate-200 focus:border-purple-500 focus:ring-purple-100'
+                          errors.businessName ? 'border-rose-400 focus:ring-rose-200' : 'border-slate-200 focus:border-emerald-500 focus:ring-emerald-100'
                         } focus:outline-none focus:ring-3 transition-colors text-slate-900`}
                         aria-invalid={errors.businessName ? 'true' : 'false'}
                       />
@@ -314,7 +314,7 @@ export default function ConsultationForm() {
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         placeholder="e.g. +91 98765 43210"
                         className={`w-full px-3.5 py-2.5 text-sm rounded-lg bg-white border ${
-                          errors.phone ? 'border-rose-400 focus:ring-rose-200' : 'border-slate-200 focus:border-purple-500 focus:ring-purple-100'
+                          errors.phone ? 'border-rose-400 focus:ring-rose-200' : 'border-slate-200 focus:border-emerald-500 focus:ring-emerald-100'
                         } focus:outline-none focus:ring-3 transition-colors text-slate-900`}
                         aria-invalid={errors.phone ? 'true' : 'false'}
                       />
@@ -335,7 +335,7 @@ export default function ConsultationForm() {
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         placeholder="e.g. you@example.com"
                         className={`w-full px-3.5 py-2.5 text-sm rounded-lg bg-white border ${
-                          errors.email ? 'border-rose-400 focus:ring-rose-200' : 'border-slate-200 focus:border-purple-500 focus:ring-purple-100'
+                          errors.email ? 'border-rose-400 focus:ring-rose-200' : 'border-slate-200 focus:border-emerald-500 focus:ring-emerald-100'
                         } focus:outline-none focus:ring-3 transition-colors text-slate-900`}
                         aria-invalid={errors.email ? 'true' : 'false'}
                       />
@@ -355,7 +355,7 @@ export default function ConsultationForm() {
                       name="businessType"
                       value={formData.businessType}
                       onChange={(e) => setFormData({ ...formData, businessType: e.target.value })}
-                      className="w-full px-3.5 py-2.5 text-sm rounded-lg bg-white border border-slate-200 focus:border-purple-500 focus:ring-3 focus:ring-purple-100 focus:outline-none transition-colors text-slate-800"
+                      className="w-full px-3.5 py-2.5 text-sm rounded-lg bg-white border border-slate-200 focus:border-emerald-500 focus:ring-3 focus:ring-emerald-100 focus:outline-none transition-colors text-slate-800"
                     >
                       <option value="">Select your business type...</option>
                       {BUSINESS_TYPES.map((type) => (
@@ -381,8 +381,8 @@ export default function ConsultationForm() {
                             onClick={() => toggleService(service.title)}
                             className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer border ${
                               isSelected
-                                ? 'bg-purple-600 text-white border-purple-600 shadow-2xs'
-                                : 'bg-white text-slate-700 border-slate-200 hover:border-purple-200'
+                                ? 'bg-[#009933] text-white border-[#009933] shadow-2xs'
+                                : 'bg-white text-slate-700 border-slate-200 hover:border-emerald-300'
                             }`}
                           >
                             {isSelected ? '✓ ' : '+ '}
@@ -405,7 +405,7 @@ export default function ConsultationForm() {
                       value={formData.challenge}
                       onChange={(e) => setFormData({ ...formData, challenge: e.target.value })}
                       placeholder="Briefly describe what you want to achieve or what issues you are currently facing with your marketing..."
-                      className="w-full px-3.5 py-2.5 text-sm rounded-lg bg-white border border-slate-200 focus:border-purple-500 focus:ring-3 focus:ring-purple-100 focus:outline-none transition-colors text-slate-900 resize-y"
+                      className="w-full px-3.5 py-2.5 text-sm rounded-lg bg-white border border-slate-200 focus:border-emerald-500 focus:ring-3 focus:ring-emerald-100 focus:outline-none transition-colors text-slate-900 resize-y"
                     />
                   </div>
 
@@ -414,7 +414,7 @@ export default function ConsultationForm() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full py-3.5 px-6 rounded-lg bg-purple-600 hover:bg-purple-700 disabled:bg-purple-400 text-white font-semibold text-sm transition-all duration-150 flex items-center justify-center gap-2 shadow-sm hover:shadow-purple-500/25 cursor-pointer disabled:cursor-not-allowed"
+                      className="w-full py-3.5 px-6 rounded-lg bg-[#009933] hover:bg-[#007A29] disabled:bg-emerald-400 text-white font-semibold text-sm transition-all duration-150 flex items-center justify-center gap-2 shadow-sm hover:shadow-emerald-600/25 cursor-pointer disabled:cursor-not-allowed"
                     >
                       {isSubmitting ? (
                         <>

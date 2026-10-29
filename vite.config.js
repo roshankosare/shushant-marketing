@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   // Ensures all assets use relative paths for direct hosting on GitHub Pages (even in subpaths)
-  base: '/shushant-marketing',
+  base: '',
 });

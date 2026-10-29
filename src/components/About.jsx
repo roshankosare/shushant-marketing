@@ -20,7 +20,7 @@ export default function About() {
           
           {/* Left Column: Heading & Positioning */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 border border-purple-100 text-xs font-semibold text-purple-700 uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-semibold text-emerald-800 uppercase tracking-wider">
               <span>About Uplift</span>
             </div>
 
@@ -35,7 +35,7 @@ export default function About() {
             <div className="pt-2">
               <button
                 onClick={scrollToConsultation}
-                className="inline-flex items-center gap-2 text-sm font-semibold text-purple-600 hover:text-purple-800 transition-colors cursor-pointer"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-[#009933] hover:text-[#007A29] transition-colors cursor-pointer"
               >
                 <span>Schedule an introduction</span>
                 <ArrowUpRight className="w-4 h-4" />
@@ -48,7 +48,7 @@ export default function About() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               
               <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-2xs">
-                <div className="w-9 h-9 rounded-lg bg-purple-50 border border-purple-100 flex items-center justify-center text-purple-600 mb-3.5">
+                <div className="w-9 h-9 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-[#009933] mb-3.5">
                   <Target className="w-4 h-4" />
                 </div>
                 <h3 className="text-base font-bold text-slate-900 mb-2">Strategy Before Ad Spend</h3>
@@ -58,7 +58,7 @@ export default function About() {
               </div>
 
               <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-2xs">
-                <div className="w-9 h-9 rounded-lg bg-purple-50 border border-purple-100 flex items-center justify-center text-purple-600 mb-3.5">
+                <div className="w-9 h-9 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-[#009933] mb-3.5">
                   <CheckCircle2 className="w-4 h-4" />
                 </div>
                 <h3 className="text-base font-bold text-slate-900 mb-2">Creative Execution</h3>
@@ -68,7 +68,7 @@ export default function About() {
               </div>
 
               <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-2xs">
-                <div className="w-9 h-9 rounded-lg bg-purple-50 border border-purple-100 flex items-center justify-center text-purple-600 mb-3.5">
+                <div className="w-9 h-9 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-[#009933] mb-3.5">
                   <MessageSquare className="w-4 h-4" />
                 </div>
                 <h3 className="text-base font-bold text-slate-900 mb-2">Clear, Direct Communication</h3>
@@ -78,7 +78,7 @@ export default function About() {
               </div>
 
               <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-2xs">
-                <div className="w-9 h-9 rounded-lg bg-purple-50 border border-purple-100 flex items-center justify-center text-purple-600 mb-3.5">
+                <div className="w-9 h-9 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-[#009933] mb-3.5">
                   <Award className="w-4 h-4" />
                 </div>
                 <h3 className="text-base font-bold text-slate-900 mb-2">Continuous Learning</h3>
